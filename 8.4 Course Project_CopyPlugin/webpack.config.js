@@ -41,7 +41,7 @@ module.exports = {
       template: "./src/pages/courses.html",
       chunks: ["courses"],
       filename: "courses.html",
-      base: "pages",
+      base: "pages"
     }),
     new CopyPlugin({
       patterns: [
@@ -49,7 +49,7 @@ module.exports = {
           from: path.resolve(__dirname, "src/assets/images/*"),
           to: path.resolve(__dirname, "dist"),
           context: "src",
-        },
+        }        
       ],
     }),
   ],
